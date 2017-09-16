@@ -26,3 +26,6 @@ print("The max score of math is %d, name is %s and id is %s" % (maxMath, stuName
 file.close()
 
 #string to number url: http://blog.csdn.net/u010412719/article/details/46820841
+#github two way push:
+## https - use id and password
+## ssh -   use ssh public key
