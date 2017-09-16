@@ -1,4 +1,4 @@
-import os
+﻿import os
 import sys
 import string
 
@@ -29,3 +29,4 @@ file.close()
 #github two way push:
 ## https - use id and password
 ## ssh -   use ssh public key
+
