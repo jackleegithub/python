@@ -32,6 +32,7 @@ def buildUrl(keyword, page):
     url = 'http://huaban.com/search/?'
     queryString = {
         'q':keyword,
+        'category':'beauty',
         'jbobp33d':'',
         'page':page,
         'per_page':'20',
