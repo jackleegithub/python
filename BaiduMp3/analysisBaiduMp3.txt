@@ -1,0 +1,18 @@
+从百度音乐人网站下载
+url='http://y.baidu.com/app/song/infolist?'
+queryString={
+        'callback':'jQuery1111015205029486288502_1514511255726',
+        'song_id':songId,
+        '_':'1514511255727'
+    }
+
+从百度音乐下载：https://music.baidu.com
+url='http://musicapi.qianqian.com/v1/restserver/ting?method=baidu.ting.song.play&format=jsonp&callback=jQuery1720834946290780753_1514555000923&songid=472686&_=1514555005976'
+url='http://musicapi.qianqian.com/v1/restserver/ting?'
+queryString={
+        'method':'baidu.ting.song.play',
+        'format':'jsonp',
+        'callback':'jQuery1720834946290780753_1514555000923',
+        'songid':'472686',
+        '_':'1514555005976'
+    }
