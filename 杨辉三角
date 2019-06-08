@@ -1,0 +1,48 @@
+'''
+杨辉三角形，也称帕斯卡三角，
+'''
+def printList2(ls):#打印列表,两位数
+    t = list(ls)
+    for i in range(0, len(ls)):
+        if t[i] == 0:
+            t[i] = '  '
+        elif t[i] < 10:
+            t[i] = ' ' + str(t[i])
+        else:
+            t[i] = str(t[i])
+            
+    print("".join(t))
+
+def printList(ls):#打印列表,三位数
+    t = list(ls)
+    for i in range(0, len(ls)):
+        if t[i] == 0:
+            t[i] = "   "
+        elif t[i] < 10:
+            t[i] = '  ' + str(t[i])
+        elif t[i] < 100:
+            t[i] = ' ' + str(t[i])
+        else:
+            t[i] = str(t[i])
+            
+    print("".join(t))
+    print(" ")
+    
+
+level = int(input("Enter the length:"))#杨辉三角的层数
+
+#初始化列表,类似这种形式[0,0,0,1,0,0,0]
+ls = []
+for i in range(0, 2 * level + 1):
+    ls.append(0)
+ls[level] = 1
+
+
+printList(ls)#打印最初的列表
+for l in range(1,level):
+    t = list(ls)
+    for i in range(1, 2*level):    
+        ls[i] = t[i-1]+ t[i+1]  
+    printList(ls)
+
+
